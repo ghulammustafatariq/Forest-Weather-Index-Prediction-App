@@ -5,8 +5,8 @@ from flask import Flask, request, render_template
 import pickle
 import numpy as np
 
-model = pickle.load(open("E:\KRISH NAIK COURSE\Machine Learning\Step by Step implementation of Ml Project\Flask App\models/model.pkl", "rb"))
-scaler = pickle.load(open("E:\KRISH NAIK COURSE\Machine Learning\Step by Step implementation of Ml Project\Flask App\models/scaler.pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
 
 app = Flask(__name__)
 
